@@ -20,7 +20,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 .navbar h1{
     font-size: 35px;
@@ -64,10 +63,6 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
- 
-   
-
 }
 
 
@@ -231,7 +226,7 @@ html {
     width:260px;
     height: 100px;
     border-radius: 40px;
-   font-weight: 500;
+font-weight: 500;
  background-color: rgb(219, 229, 232);
  border:solid 1px rgb(33, 118, 141); 
  color:rgb(33, 118, 141);
@@ -554,6 +549,11 @@ ul li{
 
 }
 
+
+.footersection{
+    margin-top: 250px;
+}
+
 .chair-content h4{
     color: rgb(33, 118, 141);
     font-weight: 700;
@@ -616,6 +616,9 @@ ul li{
     .shopsectioncon1 li{
         font-size: 19px;
     }
+    .roundtable{
+      scale: 1.15;
+    }
     .shopsectioncon2 img {
        
         animation: slideanimationsuper linear 2s;
@@ -636,7 +639,7 @@ ul li{
     }
     .chaircontent img{
         margin-top: 40px;      
-         scale: 0.81;
+         scale: 0.9;
     }
    
 }
@@ -777,7 +780,7 @@ ul li{
     .productsectionmain{
         height: 130vh;
         scale: 0.9;
-       margin-top: 180px;
+       margin-top: 130px;
        margin-bottom: 700px;
       
     }
@@ -821,8 +824,6 @@ ul li{
 
 
 }
-
-
 /*------------------------------------------------------------------*/
 
 
@@ -836,8 +837,8 @@ ul li{
     background-color: rgb(254, 254, 254);
     flex-direction: column;
     gap:100px;
-  
 }
+
 .collectiontopsection{
     width:1670px;
     display: flex;
@@ -860,11 +861,10 @@ ul li{
 
     width:200px;
     height:200px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;  
 }
+
 .itemcontainer {
-  
     width:300px;
     height: 310px;
     display: flex;
@@ -874,8 +874,7 @@ ul li{
     justify-content: flex-end;
     background-color:rgb(245, 245, 245);
     border-radius: 20px;
-    color: rgb(226, 229, 235);
-   
+    color: rgb(226, 229, 235);  
 }
 
 .itemcontent{
@@ -886,7 +885,7 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;;
+    padding: 10px 20px;
    
 }
 
@@ -941,6 +940,13 @@ ul li{
 button{
     cursor: pointer;
 }
+.extraproduct{
+    display:none;
+}
+.bestsellingproduct{
+    display: none;
+}
+
 
 
 .footersection{
@@ -1134,33 +1140,99 @@ button{
     color:grey;
 }
 
+/*-------------------------------------------------------------------------------------*/
+@media (max-width:720px){
+    .collectionbottomsection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(2, 1fr);
+        width:1100px;
+        scale: 1.1;
+        margin-top: 100px;
+        animation: slideanimation2 linear;
+}
+    .collectionsectionmain{
+        scale:0.3;
+        width:70vh;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        background-color:rgb(245, 245, 245);
+    }
+   
+    .collectiontopsection{
+      padding:0px 150px 0 150px;
+      margin-top: 1300px;
+    }
+    .collectiontopsection h1{
+        font-size: 60px;
+        width:800px;
+   
+    }
+    .collectiontopsection button{
+        font-size: 35px;
+        width:400px;
+        height: 70px;
+        margin-top: 30px;
+        margin-right: 250px;
+ 
+    }
+    .extraproduct{
+        display: block;  }
+
+
+        .extraproduct img{
+            margin-top: 15px; 
+            margin-left: 40px;
+        }
+        .collectionbottomsection img{
+            scale: 1.1;
+        }
+        .itemcontainer{
+            scale: 1.1;
+        }
+        .itemtext{
+            font-size: 25px;
+        }
+        .bestsellingproduct{
+            display: none;
+        }
+        .bestitemh1{
+            display: none;
+        }
+
+       
+        
+        
+    }
+  
+   
+
+/*-------------------------------------------------------------------------------------*/
+
+
+
 /*----------Instagraam section*/
 
 .instagrammainsection{
   width:130%;
-  height: 150vh;
+  height: 100vh;
   background-color: rgb(245, 245, 245);
-  
-
 }
 .instgramsectioncontainer{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
+
 
 .instgramsectioncontainer img{
   
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
- 
+    object-fit: cover; 
 }
-
-
-
 
 .instagramsectionleftcontainer{
     
@@ -1168,34 +1240,26 @@ button{
   grid-template-rows: repeat(9,50px);
   grid-template-columns: repeat(7,50px);
   gap: 30px;;
-
- 
-
 }
+
 .instagramsectionleftcontainer img{
     border-radius: 30px;
     position: relative;
 }
+
 .instagramimage1 img{
   
     margin-left: -100px;
 }
 
-.instagramimage1{
-    
+.instagramimage1{ 
     grid-row: 1 / 7;
-    grid-column: 1 / 5;
-   
-   
-    
+    grid-column: 1 / 5;   
 }
-
-
 
 .instagramimage2{
     grid-row: 2 / 7;
-    grid-column: 4 / 8;
-    
+    grid-column: 4 / 8;    
 }
 .instagramimage2{
     margin-left: -10px;
@@ -1314,6 +1378,35 @@ button{
 .instagramimage04{
     grid-row: 7/10;
     grid-column:4/9 ;
+}
+.instagramheading{
+    display: block;
+   }
+
+
+@media (max-width:730px){
+    .instagrammainsection{
+        scale: 0.41;
+        display: block;
+        margin-left: -260px;
+        margin-bottom: -100vh;
+        background-color: rgb(255, 255, 255);
+        margin-top: 250px;
+    }
+    .instagrammainsection h1{
+   margin-left: 400px;
+     
+    }
+   .footersectioncontainer{
+    background-color:rgb(245, 245, 245);
+    margin-top: -100vh;
+    margin-bottom: -150vh;
+
+   }
+   .instagramheading{
+    display: none;
+   }
+   
 }
 
 @keyframes appear {
@@ -1477,12 +1570,14 @@ button{
 
 }
 
+
 .productseccontent{
     animation: textfade 2s ease-in forwards;
     animation-timeline: view();
     animation-range:entry cover 50%;
 
 } 
+
 
 .collectiontopsection h1{
     animation:textfade 2s ease-in forwards;
@@ -1510,12 +1605,12 @@ button{
 }
 
 
-.collectionbottomsection .itemcontainer{
+.itemcontainer{
 
     margin-top: 100px;
-    animation:slideanimation4 forwards;
+    animation:slideanimation4 linear;
     animation-timeline: view();
-    animation-range: entry cover 60%;
+    animation-range: entry cover 40%;
 
 }
 
@@ -1544,6 +1639,14 @@ button{
     animation-range: entry cover 20%;
 
 
+}
+
+@media(max-width:730px){
+    .itemcontainer{
+        animation:textfade linear;
+        animation-timeline: view();
+        animation-range: entry cover 10%;
+    }
 }
 
 @keyframes slideanimation5{
@@ -1603,4 +1706,19 @@ button{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media (max-width:730px){
+   
+     
+
+    .footersectioncontainer{
+        height: 400px;
+        scale:0.3;
+    }
+
+
+
+
+
 }
