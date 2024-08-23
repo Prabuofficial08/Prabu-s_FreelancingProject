@@ -1150,6 +1150,7 @@ button{
         scale: 1.1;
         margin-top: 100px;
         animation: slideanimation2 linear;
+        margin-right: 50px;
 }
     .collectionsectionmain{
         scale:0.3;
